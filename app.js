@@ -38,5 +38,12 @@ app.get("/admin/create-book", (request, response, next) => {
     response.status(200).json({success: {message: "This route points to the Create Bok page"}, statusCode: 200});
 });
 
+// Server
+app.listen(PORT, () => {
+    console.log(`The server is listening on port ${PORT}`);
+    //go to localhost 
+    console.log(`http://localhost:${PORT}/`);
+});
+
 
 
