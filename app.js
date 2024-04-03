@@ -9,7 +9,7 @@ const PORT = 3000;
 
 //middleware
 
-app.use(morgan());
+app.use(morgan('dev'));
 
 // 5 GET paths 
 
