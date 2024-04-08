@@ -74,6 +74,3 @@ app.listen(PORT, () => {
     //go to localhost 
     console.log(`http://localhost:${PORT}/`);
 });
-
-
-
