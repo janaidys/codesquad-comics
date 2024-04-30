@@ -2,8 +2,8 @@ const express = require("express");
 const router = express.Router();
 
 
-// Route Paths (this is crashing my server)
-router.use('/', bookRoutes);
+// Route Paths 
+// router.use('/api/books', bookRoutes);
 
 // 5 NEW GET routes 
 

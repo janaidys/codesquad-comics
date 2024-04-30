@@ -58,6 +58,7 @@ app.get("/", (request, response, next) => {
 
 // Route Paths
 // app.use('/', authRoutes);
+app.use('/api/books', bookRoutes);
 
 // Server
 app.listen(PORT, () => {
