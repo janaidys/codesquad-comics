@@ -2,9 +2,6 @@ const express = require("express");
 const router = express.Router();
 
 
-// Route Paths 
-// router.use('/api/books', bookRoutes);
-
 // 5 NEW GET routes 
 
 router.get("/", (request, response, next) => {
