@@ -14,10 +14,10 @@ const userSchema = new mongoose.Schema({
         unique: true
     },
     password: {
-        type: buffer
+        type: Buffer
     },
     salt: {
-        type: buffer
+        type: Buffer
     },
     strategy: {
         type: String,
