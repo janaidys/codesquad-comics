@@ -46,11 +46,6 @@ app.use(express.static(path.join(__dirname + "/public")));
 
 // 5 GET paths
 
-// app.get("/", (request, response, next) => {
-//     //response.send("This route points to the Home page")
-//     response.status(200).json({success: {message: "This route points to the Home page"}, statusCode: 200});
-// });
-
 app.get("/", (request, response, next) => {
   response
     .status(200)
@@ -98,7 +93,7 @@ app.get("/admin/create-book", (request, response, next) => {
 });
 
 // Route Paths
-// app.use("/", authRoutes);
+app.use("/", authRoutes);
 app.use("/api/books", bookRoutes);
 
 // Server
