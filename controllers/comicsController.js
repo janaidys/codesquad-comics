@@ -11,7 +11,7 @@ const getAllComics = async (request, response, next) => {
         .then(comic=> 
         response.status(200).json({
         success: { message: "Found all comics!" },
-        data: comics,
+        data: comic,
         statusCode: 200,
       }));
     }
@@ -98,7 +98,7 @@ const editComic = async (request, response, next) => {
 const deleteComic = async (request, response, next) => {
     const {id} = request.params; 
 
-    await Comic.findByIdAndDelete({id});
+    await Comic.findByIdAndDelete("id");
 
     try {
         response.status(200).json({success:"Comic deleted successfully!", statusCode: 200})
