@@ -1,7 +1,7 @@
 // const booksData = require("/data/data.js");
 
 //Summoning the comics model?
-const comicsModel = require('../models/comicsModel')
+const Comic = require('../models/comicsModel')
 
 // get ALL comics
 const getAllComics = async (request, response, next) => {
