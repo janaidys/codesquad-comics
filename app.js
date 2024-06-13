@@ -1,6 +1,6 @@
 require("dotenv").config();
 
-// this line is crashing my server
+
 require("./config/connection");
 
 require("./config/authStrategy");
@@ -11,14 +11,14 @@ const morgan = require("morgan");
 const path = require("path");
 const cors = require("cors");
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 const session = require("express-session");
 const passport = require("passport");
 const helmet = require("helmet");
 const dotenv = require("dotenv");
 
 // define routing variables
-const bookRoutes = require("./routes/bookRoutes");
+const comicsRoutes = require("./routes/comicsRoutes");
 const authRoutes = require("./routes/authRoutes");
 
 //middleware
@@ -110,7 +110,7 @@ app.get("/admin/create-book", (request, response, next) => {
 
 // Route Paths
 app.use("/", authRoutes);
-app.use("/api/books", bookRoutes);
+app.use("/api/comics", comicsRoutes);
 
 // Server
 app.listen(PORT, () => {
