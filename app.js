@@ -18,7 +18,7 @@ const helmet = require("helmet");
 const dotenv = require("dotenv");
 
 // define routing variables
-const bookRoutes = require("./routes/bookRoutes");
+const bookRoutes = require("./routes/comicsRoutes");
 const authRoutes = require("./routes/authRoutes");
 
 //middleware
