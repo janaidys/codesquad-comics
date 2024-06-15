@@ -29,7 +29,7 @@ const getComic = async (request, response, next) => {
 //   const foundBook = booksModel.find((book) => book.id === Number(id));
 
   try {
-      await comic.findOne({_id:id})
+      await Comic.findOne({_id:id})
       .then(foundComic => {
       response.status(200).json({
         success: { message: "Found the comic you are looking for!" },
